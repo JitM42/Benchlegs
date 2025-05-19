@@ -22,7 +22,7 @@
             "ioValue": 300
         },
         {
-            "name": "Benchseat height",
+            "name": "Benchseat thickness",
             "ioValue": 45
         }
     ],
@@ -221,8 +221,8 @@
         {
             "atomType": "Molecule",
             "name": "Cornercutter",
-            "x": 0.18854166666666666,
-            "y": 0.9022004889975551,
+            "x": 0.19322916666666667,
+            "y": 0.8813953488372093,
             "uniqueID": 1747665039792,
             "ioValues": [
                 {
@@ -244,10 +244,15 @@
                 {
                     "atomType": "Output",
                     "name": "Output",
-                    "x": 0.98,
-                    "y": 0.5,
+                    "x": 0.9770833333333333,
+                    "y": 0.5232558139534883,
                     "uniqueID": 1747665039715,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1747666061908
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -650,6 +655,13 @@
                     "ap2ID": 1747666061908
                 },
                 {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1747666061908,
+                    "ap2ID": 1747665039715
+                },
+                {
                     "ap1Name": "result",
                     "ap2Name": "xDist",
                     "ap2Primary": false,
@@ -903,7 +915,7 @@
         },
         {
             "atomType": "Input",
-            "name": "Benchseat height",
+            "name": "Benchseat thickness",
             "x": 0.04,
             "y": 0.7017114914425427,
             "uniqueID": 1747668427773,
@@ -925,6 +937,58 @@
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "x * 1.25"
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.4192708333333333,
+            "y": 0.9744186046511628,
+            "uniqueID": 1747679390185,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1747665039792
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 90
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.5359375000000001,
+            "y": 0.8534883720930233,
+            "uniqueID": 1747679463692,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1747679390185
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -1020,6 +1084,13 @@
             "ap2ID": 1747666203824
         },
         {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1747665039792,
+            "ap2ID": 1747679390185
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "geometry2",
             "ap2Primary": false,
@@ -1058,8 +1129,22 @@
             "ap1Name": "result",
             "ap2Name": "xDist",
             "ap2Primary": false,
+            "ap1ID": 1747666295465,
+            "ap2ID": 1747679463692
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
             "ap1ID": 1747666765408,
             "ap2ID": 1747666203824
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 1747666765408,
+            "ap2ID": 1747679463692
         },
         {
             "ap1Name": "geometry",
@@ -1144,6 +1229,13 @@
             "ap2Primary": false,
             "ap1ID": 1747668465476,
             "ap2ID": 1747641379170
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1747679390185,
+            "ap2ID": 1747679463692
         }
     ],
     "unitsKey": "MM",
