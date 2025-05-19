@@ -56,8 +56,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.21197916666666666,
-            "y": 0.5134474327628362,
+            "x": 0.20677083333333332,
+            "y": 0.4229828850855746,
             "uniqueID": 1747641547396,
             "ioValues": [
                 {
@@ -146,7 +146,7 @@
                 },
                 {
                     "name": "y length",
-                    "ioValue": 440
+                    "ioValue": 481.24999999999994
                 }
             ],
             "description": "Creates a new rectangle."
@@ -168,7 +168,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": -150
+                    "ioValue": -103.12500000000003
                 },
                 {
                     "name": "zDist",
@@ -198,8 +198,8 @@
         {
             "atomType": "Equation",
             "name": "x*1.25",
-            "x": 0.11822916666666666,
-            "y": 0.47432762836185816,
+            "x": 0.10520833333333333,
+            "y": 0.4963325183374083,
             "uniqueID": 1747655521842,
             "ioValues": [
                 {
@@ -567,18 +567,37 @@
         },
         {
             "atomType": "Equation",
-            "name": "y * 0.8",
+            "name": "y * 0.7",
             "x": 0.14583333333333334,
             "y": 0.2469437652811736,
             "uniqueID": 1747667591864,
             "ioValues": [
                 {
                     "name": "y",
-                    "ioValue": 550
+                    "ioValue": 687.5
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "y * 0.8"
+            "currentEquation": "y * 0.7"
+        },
+        {
+            "atomType": "Equation",
+            "name": "(-x+y)/2",
+            "x": 0.22916666666666669,
+            "y": 0.2860635696821516,
+            "uniqueID": 1747667756231,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 687.5
+                },
+                {
+                    "name": "y",
+                    "ioValue": 481.24999999999994
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "(-x+y)/2"
         }
     ],
     "allConnectors": [
@@ -651,6 +670,20 @@
             "ap2Primary": false,
             "ap1ID": 1747655521842,
             "ap2ID": 1747666295465
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 1747655521842,
+            "ap2ID": 1747667591864
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747655521842,
+            "ap2ID": 1747667756231
         },
         {
             "ap1Name": "Geometry",
@@ -737,13 +770,6 @@
             "ap2ID": 1747655521842
         },
         {
-            "ap1Name": "number or geometry",
-            "ap2Name": "y",
-            "ap2Primary": false,
-            "ap1ID": 1747667381484,
-            "ap2ID": 1747667591864
-        },
-        {
             "ap1Name": "result",
             "ap2Name": "x length",
             "ap2Primary": false,
@@ -756,6 +782,20 @@
             "ap2Primary": false,
             "ap1ID": 1747667591864,
             "ap2ID": 1747654987182
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 1747667591864,
+            "ap2ID": 1747667756231
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 1747667756231,
+            "ap2ID": 1747655044551
         }
     ],
     "unitsKey": "MM",
