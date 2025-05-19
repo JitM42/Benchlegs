@@ -100,13 +100,13 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.8604166666666667,
-            "y": 0.4325581395348837,
+            "x": 0.7682291666666667,
+            "y": 0.4558139534883721,
             "uniqueID": 1747654848234,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1747679733793
+                    "ioValue": 1747681189907
                 },
                 {
                     "name": "height",
@@ -730,8 +730,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.42656249999999996,
-            "y": 0.9162790697674418,
+            "x": 0.5625,
+            "y": 0.8930232558139535,
             "uniqueID": 1747679981101,
             "ioValues": [
                 {
@@ -794,6 +794,96 @@
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "x - (y/2-z/2)"
+        },
+        {
+            "atomType": "Fusion",
+            "name": "Fusion",
+            "x": 0.6567708333333334,
+            "y": 0.4255813953488372,
+            "uniqueID": 1747681189907,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1747679733793
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1747679981101
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": 1747681283085
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Fusion"
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.4552083333333333,
+            "y": 0.6627906976744186,
+            "uniqueID": 1747681225948,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1747665039792
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 90
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.5244791666666666,
+            "y": 0.7651162790697674,
+            "uniqueID": 1747681283085,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1747681225948
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": -18.75
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": -12.500000000000057
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Equation",
+            "name": "-x",
+            "x": 0.45572916666666663,
+            "y": 0.8255813953488372,
+            "uniqueID": 1747681308520,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 18.75
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "-x"
         }
     ],
     "allConnectors": [
@@ -901,6 +991,13 @@
             "ap2Primary": true,
             "ap1ID": 1747665039792,
             "ap2ID": 1747679981101
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1747665039792,
+            "ap2ID": 1747681225948
         },
         {
             "ap1Name": "geometry",
@@ -1100,10 +1197,17 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
             "ap1ID": 1747679733793,
-            "ap2ID": 1747654848234
+            "ap2ID": 1747681189907
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1747679981101,
+            "ap2ID": 1747681189907
         },
         {
             "ap1Name": "result",
@@ -1114,10 +1218,52 @@
         },
         {
             "ap1Name": "result",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747680129697,
+            "ap2ID": 1747681308520
+        },
+        {
+            "ap1Name": "result",
             "ap2Name": "yDist",
             "ap2Primary": false,
             "ap1ID": 1747680534046,
             "ap2ID": 1747679981101
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 1747680534046,
+            "ap2ID": 1747681283085
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1747681189907,
+            "ap2ID": 1747654848234
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1747681225948,
+            "ap2ID": 1747681283085
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": 1747681283085,
+            "ap2ID": 1747681189907
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 1747681308520,
+            "ap2ID": 1747681283085
         }
     ],
     "unitsKey": "MM",
