@@ -277,8 +277,8 @@
                 {
                     "atomType": "Equation",
                     "name": "0.5*x",
-                    "x": 0.1375,
-                    "y": 0.6772616136919315,
+                    "x": 0.12031250000000002,
+                    "y": 0.863080684596577,
                     "uniqueID": 1747665537780,
                     "ioValues": [
                         {
@@ -292,8 +292,8 @@
                 {
                     "atomType": "Equation",
                     "name": "x * 0.25",
-                    "x": 0.14322916666666669,
-                    "y": 0.8655256723716381,
+                    "x": 0.13958333333333334,
+                    "y": 0.5330073349633252,
                     "uniqueID": 1747665787812,
                     "ioValues": [
                         {
@@ -305,33 +305,15 @@
                     "currentEquation": "x * 0.25"
                 },
                 {
-                    "atomType": "Rectangle",
-                    "name": "Rectangle",
-                    "x": 0.21041666666666667,
-                    "y": 0.5745721271393643,
-                    "uniqueID": 1747665884452,
-                    "ioValues": [
-                        {
-                            "name": "x length",
-                            "ioValue": 25
-                        },
-                        {
-                            "name": "y length",
-                            "ioValue": 25
-                        }
-                    ],
-                    "description": "Creates a new rectangle."
-                },
-                {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.259375,
-                    "y": 0.821515892420538,
+                    "x": 0.2989583333333333,
+                    "y": 0.823960880195599,
                     "uniqueID": 1747665925917,
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1747665884452
+                            "ioValue": 1747668625578
                         },
                         {
                             "name": "xDist",
@@ -351,8 +333,8 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.36822916666666666,
-                    "y": 0.6283618581907091,
+                    "x": 0.39427083333333335,
+                    "y": 0.784841075794621,
                     "uniqueID": 1747666061908,
                     "ioValues": [
                         {
@@ -389,17 +371,123 @@
                 {
                     "atomType": "Equation",
                     "name": "-x",
-                    "x": 0.16666666666666666,
-                    "y": 0.40342298288508555,
+                    "x": 0.14375000000000002,
+                    "y": 0.3422982885085575,
                     "uniqueID": 1747668548733,
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 25
+                            "ioValue": 12.5
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                     "currentEquation": "-x"
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.2,
+                    "y": 0.7163814180929096,
+                    "uniqueID": 1747668625578,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 25
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 25
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.26458333333333334,
+                    "y": 0.5696821515892421,
+                    "uniqueID": 1747668647951,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1747668625578
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -12.5
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 12.5
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.39947916666666666,
+                    "y": 0.5623471882640587,
+                    "uniqueID": 1747668682460,
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": 1747668647951
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": 1747665178783
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.2828125,
+                    "y": 0.15647921760391198,
+                    "uniqueID": 1747668775953,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1747668625578
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 12.5
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": -12.5
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.4,
+                    "y": 0.07334963325183375,
+                    "uniqueID": 1747668811751,
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": 1747668775953
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": 1747665178783
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
                 }
             ],
             "allConnectors": [
@@ -432,25 +520,32 @@
                     "ap2ID": 1747666061908
                 },
                 {
-                    "ap1Name": "result",
-                    "ap2Name": "x length",
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
                     "ap2Primary": false,
-                    "ap1ID": 1747665537780,
-                    "ap2ID": 1747665884452
+                    "ap1ID": 1747665178783,
+                    "ap2ID": 1747668682460
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": 1747665178783,
+                    "ap2ID": 1747668811751
                 },
                 {
                     "ap1Name": "result",
                     "ap2Name": "y length",
                     "ap2Primary": false,
                     "ap1ID": 1747665537780,
-                    "ap2ID": 1747665884452
+                    "ap2ID": 1747668625578
                 },
                 {
                     "ap1Name": "result",
-                    "ap2Name": "x",
+                    "ap2Name": "x length",
                     "ap2Primary": false,
                     "ap1ID": 1747665537780,
-                    "ap2ID": 1747668548733
+                    "ap2ID": 1747668625578
                 },
                 {
                     "ap1Name": "result",
@@ -467,11 +562,25 @@
                     "ap2ID": 1747665925917
                 },
                 {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 1747665884452,
-                    "ap2ID": 1747665925917
+                    "ap1Name": "result",
+                    "ap2Name": "yDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1747665787812,
+                    "ap2ID": 1747668647951
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "x",
+                    "ap2Primary": false,
+                    "ap1ID": 1747665787812,
+                    "ap2ID": 1747668548733
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "xDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1747665787812,
+                    "ap2ID": 1747668775953
                 },
                 {
                     "ap1Name": "geometry",
@@ -479,6 +588,55 @@
                     "ap2Primary": false,
                     "ap1ID": 1747665925917,
                     "ap2ID": 1747666061908
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "xDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1747668548733,
+                    "ap2ID": 1747668647951
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "yDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1747668548733,
+                    "ap2ID": 1747668775953
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1747668625578,
+                    "ap2ID": 1747668647951
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1747668625578,
+                    "ap2ID": 1747668775953
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1747668625578,
+                    "ap2ID": 1747665925917
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": 1747668647951,
+                    "ap2ID": 1747668682460
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": 1747668775953,
+                    "ap2ID": 1747668811751
                 }
             ],
             "fileTypeVersion": 1,
