@@ -20,8 +20,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.12708333333333333,
-            "y": 0.8117359413202934,
+            "x": 0.16197916666666667,
+            "y": 0.8533007334963324,
             "uniqueID": 1747641379170,
             "ioValues": [
                 {
@@ -38,13 +38,13 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.17395833333333333,
-            "y": 0.508557457212714,
+            "x": 0.21197916666666666,
+            "y": 0.5134474327628362,
             "uniqueID": 1747641547396,
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 10
+                    "ioValue": 550
                 },
                 {
                     "name": "y length",
@@ -80,7 +80,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1747655216631
+                    "ioValue": ""
                 },
                 {
                     "name": "height",
@@ -92,8 +92,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.23750000000000002,
-            "y": 0.7726161369193154,
+            "x": 0.2734375,
+            "y": 0.6943765281173594,
             "uniqueID": 1747654881295,
             "ioValues": [
                 {
@@ -136,8 +136,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.19739583333333333,
-            "y": 0.23227383863080686,
+            "x": 0.22812500000000002,
+            "y": 0.2591687041564792,
             "uniqueID": 1747655044551,
             "ioValues": [
                 {
@@ -162,8 +162,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.3625,
-            "y": 0.5305623471882641,
+            "x": 0.4328125,
+            "y": 0.40342298288508555,
             "uniqueID": 1747655216631,
             "ioValues": [
                 {
@@ -180,8 +180,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.38229166666666664,
-            "y": 0.7897310513447433,
+            "x": 0.37083333333333335,
+            "y": 0.9070904645476773,
             "uniqueID": 1747655358745,
             "ioValues": [
                 {
@@ -204,7 +204,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 0
+                    "ioValue": 275
                 },
                 {
                     "name": "yDist",
@@ -234,9 +234,9 @@
         },
         {
             "atomType": "Constant",
-            "name": "Bench width",
-            "x": 0.01927083333333333,
-            "y": 0.7212713936430318,
+            "name": "Bench height",
+            "x": 0.02291666666666667,
+            "y": 0.4694376528117359,
             "uniqueID": 1747655854935,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
@@ -244,13 +244,28 @@
         },
         {
             "atomType": "Constant",
-            "name": "Constant",
-            "x": 0.39947916666666666,
-            "y": 0.1271393643031785,
+            "name": "Bench width",
+            "x": 0.027083333333333334,
+            "y": 0.31295843520782396,
             "uniqueID": 1747655991298,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
-            "value": 10
+            "value": 550
+        },
+        {
+            "atomType": "Equation",
+            "name": "x /2",
+            "x": 0.4197916666666667,
+            "y": 0.6674816625916871,
+            "uniqueID": 1747656205126,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 550
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x /2"
         }
     ],
     "allConnectors": [
@@ -300,13 +315,6 @@
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": 1747655216631,
-            "ap2ID": 1747654848234
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
             "ap1ID": 1747655358745,
             "ap2ID": 1747655405926
         },
@@ -323,6 +331,27 @@
             "ap2Primary": false,
             "ap1ID": 1747655854935,
             "ap2ID": 1747655521842
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 1747655991298,
+            "ap2ID": 1747641547396
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747655991298,
+            "ap2ID": 1747656205126
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 1747656205126,
+            "ap2ID": 1747655405926
         }
     ],
     "unitsKey": "MM",
