@@ -4,12 +4,7 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1747639269301,
-    "ioValues": [
-        {
-            "name": "Bench height",
-            "ioValue": 10
-        }
-    ],
+    "ioValues": [],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
@@ -49,11 +44,11 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 12.5
+                    "ioValue": 10
                 },
                 {
                     "name": "y length",
-                    "ioValue": 700
+                    "ioValue": 687.5
                 }
             ],
             "description": "Creates a new rectangle."
@@ -223,16 +218,6 @@
             "description": "Moves a shape laterally in X, Y, Z."
         },
         {
-            "atomType": "Input",
-            "name": "Bench height",
-            "x": 0.04,
-            "y": 0.3251833740831296,
-            "uniqueID": 1747655476005,
-            "ioValues": [],
-            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
-            "type": "number"
-        },
-        {
             "atomType": "Equation",
             "name": "x*1.25",
             "x": 0.09166666666666667,
@@ -241,11 +226,31 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 10
+                    "ioValue": 550
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "x*1.25"
+        },
+        {
+            "atomType": "Constant",
+            "name": "Bench width",
+            "x": 0.01927083333333333,
+            "y": 0.7212713936430318,
+            "uniqueID": 1747655854935,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 550
+        },
+        {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.39947916666666666,
+            "y": 0.1271393643031785,
+            "uniqueID": 1747655991298,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 10
         }
     ],
     "allConnectors": [
@@ -306,18 +311,18 @@
             "ap2ID": 1747655405926
         },
         {
-            "ap1Name": "number or geometry",
-            "ap2Name": "x",
-            "ap2Primary": false,
-            "ap1ID": 1747655476005,
-            "ap2ID": 1747655521842
-        },
-        {
             "ap1Name": "result",
-            "ap2Name": "x length",
+            "ap2Name": "y length",
             "ap2Primary": false,
             "ap1ID": 1747655521842,
             "ap2ID": 1747641547396
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747655854935,
+            "ap2ID": 1747655521842
         }
     ],
     "unitsKey": "MM",
