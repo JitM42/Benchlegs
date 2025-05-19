@@ -132,7 +132,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 584.375
+                    "ioValue": 240.62499999999997
                 },
                 {
                     "name": "zDist",
@@ -887,7 +887,7 @@
         },
         {
             "atomType": "Equation",
-            "name": "x-((x-z)/2)",
+            "name": "x/2-((x-z)/2)",
             "x": 0.2171875,
             "y": 0.4813953488372093,
             "uniqueID": 1747691264813,
@@ -902,7 +902,7 @@
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x-((x-z)/2)"
+            "currentEquation": "x/2-((x-z)/2)"
         }
     ],
     "allConnectors": [
