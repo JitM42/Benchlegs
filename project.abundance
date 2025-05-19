@@ -211,6 +211,67 @@
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 550
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Cornercutter",
+            "x": 0.4765625,
+            "y": 0.6992665036674817,
+            "uniqueID": 1747665039792,
+            "ioValues": [
+                {
+                    "name": "Diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1747665039715,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Diameter",
+                    "x": 0.04,
+                    "y": 0.4352078239608802,
+                    "uniqueID": 1747665151002,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.14947916666666666,
+                    "y": 0.2616136919315403,
+                    "uniqueID": 1747665178783,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "diameter",
+                    "ap2Primary": false,
+                    "ap1ID": 1747665151002,
+                    "ap2ID": 1747665178783
+                }
+            ],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
