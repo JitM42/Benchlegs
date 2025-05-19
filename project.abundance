@@ -11,6 +11,10 @@
         },
         {
             "name": "Benchleg width",
+            "ioValue": 450
+        },
+        {
+            "name": "Benchleg height",
             "ioValue": 550
         }
     ],
@@ -58,7 +62,7 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 550
+                    "ioValue": 450
                 },
                 {
                     "name": "y length",
@@ -132,17 +136,17 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.12395833333333334,
-            "y": 0.23716381418092908,
+            "x": 0.2046875,
+            "y": 0.1295843520782396,
             "uniqueID": 1747654987182,
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 300
+                    "ioValue": 337.5
                 },
                 {
                     "name": "y length",
-                    "ioValue": 500
+                    "ioValue": 440
                 }
             ],
             "description": "Creates a new rectangle."
@@ -150,8 +154,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.22812500000000002,
-            "y": 0.2591687041564792,
+            "x": 0.275,
+            "y": 0.15158924205378974,
             "uniqueID": 1747655044551,
             "ioValues": [
                 {
@@ -194,8 +198,8 @@
         {
             "atomType": "Equation",
             "name": "x*1.25",
-            "x": 0.09166666666666667,
-            "y": 0.5330073349633252,
+            "x": 0.11822916666666666,
+            "y": 0.47432762836185816,
             "uniqueID": 1747655521842,
             "ioValues": [
                 {
@@ -205,16 +209,6 @@
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "x*1.25"
-        },
-        {
-            "atomType": "Constant",
-            "name": "Bench height",
-            "x": 0.02291666666666667,
-            "y": 0.4694376528117359,
-            "uniqueID": 1747655854935,
-            "ioValues": [],
-            "description": "Defines a mathematical constant.",
-            "value": 550
         },
         {
             "atomType": "Molecule",
@@ -457,7 +451,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 225
+                    "ioValue": 175
                 },
                 {
                     "name": "yDist",
@@ -508,7 +502,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 550
+                    "ioValue": 450
                 },
                 {
                     "name": "y",
@@ -540,11 +534,51 @@
             "atomType": "Input",
             "name": "Benchleg width",
             "x": 0.04,
-            "y": 0.17848410757946212,
+            "y": 0.18581907090464547,
             "uniqueID": 1747667276092,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "Benchleg height",
+            "x": 0.04,
+            "y": 0.3105134474327628,
+            "uniqueID": 1747667381484,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Equation",
+            "name": "x * 0.75",
+            "x": 0.125,
+            "y": 0.08312958435207823,
+            "uniqueID": 1747667524212,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 450
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x * 0.75"
+        },
+        {
+            "atomType": "Equation",
+            "name": "y * 0.8",
+            "x": 0.14583333333333334,
+            "y": 0.2469437652811736,
+            "uniqueID": 1747667591864,
+            "ioValues": [
+                {
+                    "name": "y",
+                    "ioValue": 550
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "y * 0.8"
         }
     ],
     "allConnectors": [
@@ -619,13 +653,6 @@
             "ap2ID": 1747666295465
         },
         {
-            "ap1Name": "number",
-            "ap2Name": "x",
-            "ap2Primary": false,
-            "ap1ID": 1747655854935,
-            "ap2ID": 1747655521842
-        },
-        {
             "ap1Name": "Geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
@@ -694,6 +721,41 @@
             "ap2Primary": false,
             "ap1ID": 1747667276092,
             "ap2ID": 1747641547396
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747667276092,
+            "ap2ID": 1747667524212
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747667381484,
+            "ap2ID": 1747655521842
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 1747667381484,
+            "ap2ID": 1747667591864
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 1747667524212,
+            "ap2ID": 1747654987182
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "y length",
+            "ap2Primary": false,
+            "ap1ID": 1747667591864,
+            "ap2ID": 1747654987182
         }
     ],
     "unitsKey": "MM",
