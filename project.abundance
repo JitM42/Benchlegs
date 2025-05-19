@@ -16,6 +16,14 @@
         {
             "name": "Benchleg height",
             "ioValue": 550
+        },
+        {
+            "name": "Benchseat width",
+            "ioValue": 300
+        },
+        {
+            "name": "Benchseat height",
+            "ioValue": 45
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -38,8 +46,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.159375,
-            "y": 0.6723716381418092,
+            "x": 0.18177083333333335,
+            "y": 0.647921760391198,
             "uniqueID": 1747641379170,
             "ioValues": [
                 {
@@ -48,7 +56,7 @@
                 },
                 {
                     "name": "y length",
-                    "ioValue": 55
+                    "ioValue": 56.25
                 }
             ],
             "description": "Creates a new rectangle."
@@ -198,8 +206,8 @@
         {
             "atomType": "Equation",
             "name": "x*1.25",
-            "x": 0.10520833333333333,
-            "y": 0.4963325183374083,
+            "x": 0.09947916666666667,
+            "y": 0.45232273838630804,
             "uniqueID": 1747655521842,
             "ioValues": [
                 {
@@ -255,8 +263,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.15312499999999998,
-                    "y": 0.43765281173594134,
+                    "x": 0.15989583333333332,
+                    "y": 0.12469437652811736,
                     "uniqueID": 1747665178783,
                     "ioValues": [
                         {
@@ -377,6 +385,21 @@
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                     "type": "number"
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "-x",
+                    "x": 0.16666666666666666,
+                    "y": 0.40342298288508555,
+                    "uniqueID": 1747668548733,
+                    "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 25
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "-x"
                 }
             ],
             "allConnectors": [
@@ -421,6 +444,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1747665537780,
                     "ap2ID": 1747665884452
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "x",
+                    "ap2Primary": false,
+                    "ap1ID": 1747665537780,
+                    "ap2ID": 1747668548733
                 },
                 {
                     "ap1Name": "result",
@@ -484,7 +514,7 @@
             "atomType": "Input",
             "name": "CornerDiameter",
             "x": 0.04,
-            "y": 0.6919315403422983,
+            "y": 0.8508557457212713,
             "uniqueID": 1747666252169,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -550,7 +580,7 @@
             "atomType": "Input",
             "name": "Benchleg width",
             "x": 0.04,
-            "y": 0.18581907090464547,
+            "y": 0.1491442542787286,
             "uniqueID": 1747667276092,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -560,7 +590,7 @@
             "atomType": "Input",
             "name": "Benchleg height",
             "x": 0.04,
-            "y": 0.3105134474327628,
+            "y": 0.35452322738386305,
             "uniqueID": 1747667381484,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -614,6 +644,41 @@
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "(-x+y)/2"
+        },
+        {
+            "atomType": "Input",
+            "name": "Benchseat width",
+            "x": 0.04,
+            "y": 0.5501222493887531,
+            "uniqueID": 1747668349125,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "Benchseat height",
+            "x": 0.04,
+            "y": 0.7017114914425427,
+            "uniqueID": 1747668427773,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Equation",
+            "name": "x * 1.25",
+            "x": 0.11302083333333332,
+            "y": 0.7286063569682151,
+            "uniqueID": 1747668465476,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 45
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x * 1.25"
         }
     ],
     "allConnectors": [
@@ -812,6 +877,27 @@
             "ap2Primary": false,
             "ap1ID": 1747667756231,
             "ap2ID": 1747655044551
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 1747668349125,
+            "ap2ID": 1747641379170
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747668427773,
+            "ap2ID": 1747668465476
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "y length",
+            "ap2Primary": false,
+            "ap1ID": 1747668465476,
+            "ap2ID": 1747641379170
         }
     ],
     "unitsKey": "MM",
