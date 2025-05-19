@@ -4,7 +4,12 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1747639269301,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "CornerDiameter",
+            "ioValue": 10
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
@@ -14,14 +19,19 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1747639278111,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1747654848234
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.16197916666666667,
-            "y": 0.8533007334963324,
+            "x": 0.159375,
+            "y": 0.6723716381418092,
             "uniqueID": 1747641379170,
             "ioValues": [
                 {
@@ -92,8 +102,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.2734375,
-            "y": 0.6943765281173594,
+            "x": 0.2791666666666667,
+            "y": 0.6112469437652812,
             "uniqueID": 1747654881295,
             "ioValues": [
                 {
@@ -215,13 +225,13 @@
         {
             "atomType": "Molecule",
             "name": "Cornercutter",
-            "x": 0.4765625,
-            "y": 0.6992665036674817,
+            "x": 0.18854166666666666,
+            "y": 0.9022004889975551,
             "uniqueID": 1747665039792,
             "ioValues": [
                 {
                     "name": "Diameter",
-                    "ioValue": 100
+                    "ioValue": 10
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -233,7 +243,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1747665039715,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1747666061908
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -249,63 +264,27 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.14947916666666666,
-                    "y": 0.2616136919315403,
+                    "x": 0.2520833333333333,
+                    "y": 0.2713936430317848,
                     "uniqueID": 1747665178783,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 100
+                            "ioValue": 10
                         }
                     ],
                     "description": "Creates a new circle."
                 },
                 {
-                    "atomType": "Rectangle",
-                    "name": "Rectangle",
-                    "x": 0.15208333333333335,
-                    "y": 0.4963325183374083,
-                    "uniqueID": 1747665187116,
-                    "ioValues": [
-                        {
-                            "name": "x length",
-                            "ioValue": 100
-                        },
-                        {
-                            "name": "y length",
-                            "ioValue": 100
-                        }
-                    ],
-                    "description": "Creates a new rectangle."
-                },
-                {
-                    "atomType": "Difference",
-                    "name": "Difference",
-                    "x": 0.23541666666666664,
-                    "y": 0.46210268948655253,
-                    "uniqueID": 1747665329404,
-                    "ioValues": [
-                        {
-                            "name": "geometry1",
-                            "ioValue": 1747665187116
-                        },
-                        {
-                            "name": "geometry2",
-                            "ioValue": 1747665178783
-                        }
-                    ],
-                    "description": "Subtracts shape two from shape one."
-                },
-                {
                     "atomType": "Equation",
                     "name": "0.5*x",
-                    "x": 0.10416666666666667,
-                    "y": 0.6699266503667483,
+                    "x": 0.1265625,
+                    "y": 0.508557457212714,
                     "uniqueID": 1747665537780,
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 100
+                            "ioValue": 10
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -320,7 +299,7 @@
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 100
+                            "ioValue": 10
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -329,17 +308,17 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.16927083333333331,
-                    "y": 0.7408312958435208,
+                    "x": 0.20260416666666667,
+                    "y": 0.5525672371638142,
                     "uniqueID": 1747665884452,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 50
+                            "ioValue": 5
                         },
                         {
                             "name": "y length",
-                            "ioValue": 50
+                            "ioValue": 5
                         }
                     ],
                     "description": "Creates a new rectangle."
@@ -347,8 +326,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.23541666666666664,
-                    "y": 0.8826405867970659,
+                    "x": 0.259375,
+                    "y": 0.821515892420538,
                     "uniqueID": 1747665925917,
                     "ioValues": [
                         {
@@ -357,11 +336,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 25
+                            "ioValue": 2.5
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 25
+                            "ioValue": 2.5
                         },
                         {
                             "name": "zDist",
@@ -371,22 +350,22 @@
                     "description": "Moves a shape laterally in X, Y, Z."
                 },
                 {
-                    "atomType": "Intersection",
-                    "name": "Intersection",
-                    "x": 0.3046875,
-                    "y": 0.6210268948655256,
-                    "uniqueID": 1747665985110,
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.37187499999999996,
+                    "y": 0.3985330073349633,
+                    "uniqueID": 1747666061908,
                     "ioValues": [
                         {
                             "name": "geometry1",
-                            "ioValue": 1747665329404
+                            "ioValue": 1747665925917
                         },
                         {
                             "name": "geometry2",
-                            "ioValue": ""
+                            "ioValue": 1747665178783
                         }
                     ],
-                    "description": "The space shared by two shapes."
+                    "description": "Subtracts shape two from shape one."
                 }
             ],
             "allConnectors": [
@@ -396,20 +375,6 @@
                     "ap2Primary": false,
                     "ap1ID": 1747665151002,
                     "ap2ID": 1747665178783
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "x length",
-                    "ap2Primary": false,
-                    "ap1ID": 1747665151002,
-                    "ap2ID": 1747665187116
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "y length",
-                    "ap2Primary": false,
-                    "ap1ID": 1747665151002,
-                    "ap2ID": 1747665187116
                 },
                 {
                     "ap1Name": "number or geometry",
@@ -430,21 +395,7 @@
                     "ap2Name": "geometry2",
                     "ap2Primary": false,
                     "ap1ID": 1747665178783,
-                    "ap2ID": 1747665329404
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry1",
-                    "ap2Primary": false,
-                    "ap1ID": 1747665187116,
-                    "ap2ID": 1747665329404
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry1",
-                    "ap2Primary": false,
-                    "ap1ID": 1747665329404,
-                    "ap2ID": 1747665985110
+                    "ap2ID": 1747666061908
                 },
                 {
                     "ap1Name": "result",
@@ -481,10 +432,78 @@
                     "ap1ID": 1747665884452,
                     "ap2ID": 1747665925917
                 },
-                null
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": 1747665925917,
+                    "ap2ID": 1747666061908
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1747666061908,
+                    "ap2ID": 1747665039715
+                }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.37083333333333335,
+            "y": 0.823960880195599,
+            "uniqueID": 1747666203824,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1747665039792
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": -5
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Input",
+            "name": "CornerDiameter",
+            "x": 0.04,
+            "y": 0.6919315403422983,
+            "uniqueID": 1747666252169,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Equation",
+            "name": "x - (y/2)",
+            "x": 0.2828125,
+            "y": 0.7921760391198044,
+            "uniqueID": 1747666295465,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x - (y/2)"
         }
     ],
     "allConnectors": [
@@ -508,6 +527,13 @@
             "ap2Primary": false,
             "ap1ID": 1747641709979,
             "ap2ID": 1747655216631
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1747654848234,
+            "ap2ID": 1747639278111
         },
         {
             "ap1Name": "geometry",
@@ -545,6 +571,13 @@
             "ap2ID": 1747641547396
         },
         {
+            "ap1Name": "result",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747655521842,
+            "ap2ID": 1747666295465
+        },
+        {
             "ap1Name": "number",
             "ap2Name": "x",
             "ap2Primary": false,
@@ -557,6 +590,34 @@
             "ap2Primary": false,
             "ap1ID": 1747655991298,
             "ap2ID": 1747641547396
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1747665039792,
+            "ap2ID": 1747666203824
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Diameter",
+            "ap2Primary": false,
+            "ap1ID": 1747666252169,
+            "ap2ID": 1747665039792
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 1747666252169,
+            "ap2ID": 1747666295465
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 1747666295465,
+            "ap2ID": 1747666203824
         }
     ],
     "unitsKey": "MM",
