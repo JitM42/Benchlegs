@@ -100,8 +100,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.6598958333333333,
-            "y": 0.25813953488372093,
+            "x": 0.8604166666666667,
+            "y": 0.4325581395348837,
             "uniqueID": 1747654848234,
             "ioValues": [
                 {
@@ -730,8 +730,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.4286458333333334,
-            "y": 0.9186046511627907,
+            "x": 0.42656249999999996,
+            "y": 0.9162790697674418,
             "uniqueID": 1747679981101,
             "ioValues": [
                 {
@@ -744,7 +744,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 46.87499999999997
+                    "ioValue": -12.500000000000057
                 },
                 {
                     "name": "zDist",
@@ -774,7 +774,7 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + y/2",
+            "name": "x - (y/2-z/2)",
             "x": 0.3083333333333333,
             "y": 0.9534883720930232,
             "uniqueID": 1747680534046,
@@ -786,10 +786,14 @@
                 {
                     "name": "y",
                     "ioValue": 300
+                },
+                {
+                    "name": "z",
+                    "ioValue": 481.24999999999994
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + y/2"
+            "currentEquation": "x - (y/2-z/2)"
         }
     ],
     "allConnectors": [
@@ -1030,6 +1034,13 @@
             "ap2Primary": false,
             "ap1ID": 1747667591864,
             "ap2ID": 1747667756231
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "z",
+            "ap2Primary": false,
+            "ap1ID": 1747667591864,
+            "ap2ID": 1747680534046
         },
         {
             "ap1Name": "result",
