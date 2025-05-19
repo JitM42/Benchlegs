@@ -20,13 +20,13 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.07760416666666667,
-            "y": 0.5281173594132029,
+            "x": 0.20572916666666666,
+            "y": 0.7603911980440098,
             "uniqueID": 1747641379170,
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 30
+                    "ioValue": 300
                 },
                 {
                     "name": "y length",
@@ -38,13 +38,13 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.19375,
-            "y": 0.2982885085574572,
+            "x": 0.12447916666666667,
+            "y": 0.5207823960880196,
             "uniqueID": 1747641547396,
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 150
+                    "ioValue": 450
                 },
                 {
                     "name": "y length",
@@ -52,9 +52,42 @@
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.30312500000000003,
+            "y": 0.4352078239608802,
+            "uniqueID": 1747641709979,
+            "ioValues": [
+                {
+                    "name": "geometry1",
+                    "ioValue": 1747641547396
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": 1747641379170
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 1747641379170,
+            "ap2ID": 1747641709979
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 1747641547396,
+            "ap2ID": 1747641709979
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
