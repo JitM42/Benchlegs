@@ -591,8 +591,8 @@
         {
             "atomType": "Equation",
             "name": "(-x+y)/2",
-            "x": 0.22916666666666669,
-            "y": 0.2860635696821516,
+            "x": 0.23802083333333335,
+            "y": 0.2744186046511628,
             "uniqueID": 1747667756231,
             "ioValues": [
                 {
@@ -730,8 +730,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.4229166666666666,
-            "y": 0.9116279069767442,
+            "x": 0.4286458333333334,
+            "y": 0.9186046511627907,
             "uniqueID": 1747679981101,
             "ioValues": [
                 {
@@ -744,7 +744,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 46.87499999999997
                 },
                 {
                     "name": "zDist",
@@ -771,6 +771,25 @@
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "x/2 - y/2"
+        },
+        {
+            "atomType": "Equation",
+            "name": "x + y/2",
+            "x": 0.3083333333333333,
+            "y": 0.9534883720930232,
+            "uniqueID": 1747680534046,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": -103.12500000000003
+                },
+                {
+                    "name": "y",
+                    "ioValue": 300
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x + y/2"
         }
     ],
     "allConnectors": [
@@ -915,6 +934,13 @@
             "ap2ID": 1747680129697
         },
         {
+            "ap1Name": "number or geometry",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 1747666252169,
+            "ap2ID": 1747680534046
+        },
+        {
             "ap1Name": "result",
             "ap2Name": "yDist",
             "ap2Primary": false,
@@ -1013,6 +1039,13 @@
             "ap2ID": 1747655044551
         },
         {
+            "ap1Name": "result",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747667756231,
+            "ap2ID": 1747680534046
+        },
+        {
             "ap1Name": "number or geometry",
             "ap2Name": "x length",
             "ap2Primary": false,
@@ -1066,6 +1099,13 @@
             "ap2Name": "xDist",
             "ap2Primary": false,
             "ap1ID": 1747680129697,
+            "ap2ID": 1747679981101
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 1747680534046,
             "ap2ID": 1747679981101
         }
     ],
