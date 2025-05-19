@@ -8,6 +8,10 @@
         {
             "name": "CornerDiameter",
             "ioValue": 100
+        },
+        {
+            "name": "Benchleg width",
+            "ioValue": 550
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -208,16 +212,6 @@
             "x": 0.02291666666666667,
             "y": 0.4694376528117359,
             "uniqueID": 1747655854935,
-            "ioValues": [],
-            "description": "Defines a mathematical constant.",
-            "value": 550
-        },
-        {
-            "atomType": "Constant",
-            "name": "Bench width",
-            "x": 0.027083333333333334,
-            "y": 0.31295843520782396,
-            "uniqueID": 1747655991298,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 550
@@ -489,8 +483,8 @@
         {
             "atomType": "Equation",
             "name": "(x/2)-y/2",
-            "x": 0.2729166666666667,
-            "y": 0.784841075794621,
+            "x": 0.278125,
+            "y": 0.7701711491442542,
             "uniqueID": 1747666295465,
             "ioValues": [
                 {
@@ -541,6 +535,16 @@
                 }
             ],
             "description": "Subtracts shape two from shape one."
+        },
+        {
+            "atomType": "Input",
+            "name": "Benchleg width",
+            "x": 0.04,
+            "y": 0.17848410757946212,
+            "uniqueID": 1747667276092,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
         }
     ],
     "allConnectors": [
@@ -622,20 +626,6 @@
             "ap2ID": 1747655521842
         },
         {
-            "ap1Name": "number",
-            "ap2Name": "x length",
-            "ap2Primary": false,
-            "ap1ID": 1747655991298,
-            "ap2ID": 1747641547396
-        },
-        {
-            "ap1Name": "number",
-            "ap2Name": "x",
-            "ap2Primary": false,
-            "ap1ID": 1747655991298,
-            "ap2ID": 1747666765408
-        },
-        {
             "ap1Name": "Geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
@@ -690,6 +680,20 @@
             "ap2Primary": true,
             "ap1ID": 1747666966371,
             "ap2ID": 1747654848234
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1747667276092,
+            "ap2ID": 1747666765408
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 1747667276092,
+            "ap2ID": 1747641547396
         }
     ],
     "unitsKey": "MM",
