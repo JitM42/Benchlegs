@@ -15,7 +15,7 @@
         },
         {
             "name": "Bench height",
-            "ioValue": 550
+            "ioValue": 800
         },
         {
             "name": "Benchseat width",
@@ -74,7 +74,7 @@
                 },
                 {
                     "name": "y length",
-                    "ioValue": 687.5
+                    "ioValue": 1000
                 }
             ],
             "description": "Creates a new rectangle."
@@ -132,7 +132,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 240.62499999999997
+                    "ioValue": 350
                 },
                 {
                     "name": "zDist",
@@ -154,7 +154,7 @@
                 },
                 {
                     "name": "y length",
-                    "ioValue": 481.24999999999994
+                    "ioValue": 700
                 }
             ],
             "description": "Creates a new rectangle."
@@ -176,7 +176,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": -103.12500000000003
+                    "ioValue": -150
                 },
                 {
                     "name": "zDist",
@@ -212,7 +212,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 550
+                    "ioValue": 800
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -463,7 +463,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 268.75
+                    "ioValue": 425
                 },
                 {
                     "name": "zDist",
@@ -491,7 +491,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 687.5
+                    "ioValue": 1000
                 },
                 {
                     "name": "y",
@@ -582,7 +582,7 @@
             "ioValues": [
                 {
                     "name": "y",
-                    "ioValue": 687.5
+                    "ioValue": 1000
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -597,11 +597,11 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 687.5
+                    "ioValue": 1000
                 },
                 {
                     "name": "y",
-                    "ioValue": 481.24999999999994
+                    "ioValue": 700
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -685,7 +685,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 268.75
+                    "ioValue": 425
                 },
                 {
                     "name": "zDist",
@@ -744,7 +744,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 62.49999999999994
+                    "ioValue": 125
                 },
                 {
                     "name": "zDist",
@@ -781,7 +781,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": -103.12500000000003
+                    "ioValue": -150
                 },
                 {
                     "name": "y",
@@ -789,7 +789,7 @@
                 },
                 {
                     "name": "z",
-                    "ioValue": 481.24999999999994
+                    "ioValue": 700
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -861,7 +861,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 62.49999999999994
+                    "ioValue": 125
                 },
                 {
                     "name": "zDist",
@@ -894,11 +894,11 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 687.5
+                    "ioValue": 1000
                 },
                 {
                     "name": "z",
-                    "ioValue": 481.24999999999994
+                    "ioValue": 700
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
